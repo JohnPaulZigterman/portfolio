@@ -1,0 +1,84 @@
+.navhead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: darkslategrey;
+    color: tan;
+}
+
+body {
+    background-color: slategray;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+nav ul li a {
+    color: antiquewhite;
+}
+
+nav ul li a:hover {
+    color: darkred;
+}
+
+main {
+    display: grid;
+    max-width: 96%;
+    margin: 1% auto;
+    background-color: lightgray;
+}
+
+main section {
+    display: inline-flex;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 30px;
+}
+
+main section header {
+    display: inline-flex;
+    position: relative;
+    justify-content: left;
+    border-right: 6px solid green;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.hero {
+    max-height: 60px;
+    width: 100%;
+}
+
+.info {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.info img {
+    border: solid;
+    border-color: darkslateblue;
+    border-width: 5px;
+}
+
+.info img:hover {
+    border: dashed;
+    border-color: black;
+}
+
+
+.firstproject {
+    width: 300px;
+    height: 300px;
+}
+
+.project {
+    width: 150px;
+    height: 150px;
+}
