@@ -35,8 +35,9 @@ main {
 }
 
 .hero {
-    max-height: 60px;
+    height: 60px;
     width: 100%;
+    background-image: url("../images/banner.jpg");
 }
 
 .box-container {
@@ -54,16 +55,15 @@ main {
 
 .box header {
     float: left;
-    width: 20%;
-    max-width: 150px;
-    min-width: 150px;
-    border: 1px black solid;
+    width: 15%;
+    font-size: 1.3vw;
     border-right: 6px solid green;
 }
 
 .content {
+    float: right;
     margin: 3px;
-    border: 3px red solid;
+    margin-left: 12px;
     width: 80%;
 }
 
@@ -74,25 +74,71 @@ main {
 
 .pic {
     margin: 1%;
-    min-width: 33%;
-    border: 3px solid black;
+    min-width: 31%;
+    border: 3px solid orange;
     background-color: bisque;
+    min-height: 200px;
+    box-shadow: 8px 8px 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .pic:hover {
-    border: dotted;
+    box-shadow: 12px 12px 12px;
+    border: 3px dotted orange;
+}
+
+.pic:active {
+    border: 3px solid whitesmoke;
+}
+
+.pic:active > p {
+    background-color: whitesmoke;
 }
 
 .pic1 {
-    min-height: 200px;
-    min-width: 98%;
+    min-width: 97%;
+    background-image: url("../images/calculator.jpg");
 }
 
 .pic2 {
-    min-height: 200px;
-
+    background-image: url("../images/stopwatch.jpg");
 }
 
 .pic3 {
-    min-height: 200px;
+    background-image: url("../images/sundial.jpg");
+}
+
+.pic4 {
+    background-image: url("../images/flav.jpg");
+}
+
+.promotext {
+    font-family: monospace;
+    position: absolute;
+    font-size: 3vw;
+    background-color: orange;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .box {
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .box header {
+        border-bottom: 6px green solid;
+        border-right: none;
+        width: 150px;
+        font-size:25px;
+    }
+    
+    .content {
+        float: inline-end;
+        margin-top: 15px;
+        margin-left: 0px;
+        width: 100%;
+    }
 }
