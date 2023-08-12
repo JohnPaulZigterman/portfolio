@@ -25,42 +25,37 @@
 
     <img class="hero" src="./assets/images/banner.jpg" />
 
-    <main>
+    <main class="box-container">
 
-        <section class="about">
+        <section class="box about">
             <header>
                 <h2>About Me</h2>
             </header>
 
-            <article>
-                <p class="info">John Paul Zigterman is an aspiring programmer and software developer with a background in audio engineering and the history of cybernetics</p>
+            <article class="content">
+                <p>John Paul Zigterman is an aspiring programmer and software developer with a background in audio engineering and the history of cybernetics</p>
             </article>
         </section>
 
-        <section>
+        <section class="box projects">
             <header>
                 <h2>My Projects</h2>
             </header>
             
-            <article class="info">
-                <div>
-                    <img class="firstproject" src="./assets/images/calculator.jpg" />
-                </div>
-                <div>
-                    <img class="project" src="./assets/images/stopwatch.jpg" />
-                </div>
-                <div>
-                    <img class="project" src="./assets/images/sundial.jpg" />
-                </div>
+            <div class="content pic-container">
+                <div class="pic pic1"></div>
+                <div class="pic pic2"></div>
+                <div class="pic pic3"></div>
+            </div>
             </article>
         </section>
 
-        <section class="contact">
+        <section class="box contact">
             <header>
                 <h2>Contact Me</h2>
             </header>
             
-            <div class="info">
+            <article class="content">
             <form>
                 <h3>Put In Ya Info</h3>
                 <p>
@@ -68,7 +63,7 @@
                     <input class="textinput" id="username" type="text" placeholder="ya name" />
                 </p>
             </form>
-            </div>
+        </article>
         </section>
     </main>
 
