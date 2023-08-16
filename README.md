@@ -23,6 +23,10 @@ I, John Paul Zigterman, completed this project by myself with the aid of the res
 
 https://johnpaulzigterman.github.io/portfolio/
 
+## Screenshot
+
+![Screenshot included](./assets/images/screenshot.png)
+
 ## License
 
 MIT License
