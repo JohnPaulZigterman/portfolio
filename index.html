@@ -13,12 +13,13 @@
 
     <header class="navhead">
         <h1>John Paul Zigterman</h1>
+        <span class="profile"></span>
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact Me</a></li>
-                <li><a href="#">Resume</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+                <li><a href="#myresume">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -28,6 +29,7 @@
     <main class="box-container">
 
         <section class="box about">
+            <a name="aboutme"></a>
             <header>
                 <h2>About Me</h2>
             </header>
@@ -38,6 +40,7 @@
         </section>
 
         <section class="box projects">
+            <a name="work"></a>
             <header>
                 <h2>My Projects</h2>
             </header>
@@ -60,19 +63,35 @@
         </section>
 
         <section class="box contact">
+            <a name="contactme"></a>
             <header>
                 <h2>Contact Me</h2>
             </header>
             
-            <article class="content">
-            <form>
+            <form class="content">
                 <h3>Put In Ya Info</h3>
                 <p>
                     <label for="username">Name:</label>
                     <input class="textinput" id="username" type="text" placeholder="ya name" />
                 </p>
+
+                <ul class="contactlist">
+                    <li><a href="https://github.com/JohnPaulZigterman">GitHub</a></li>
+                    <li><a href="https://www.facebook.com/jpzigterman/">Facebook</a></li>
+                    <li><a href="https://open.spotify.com/user/1235681869?si=a75c1f0ca41545e6">Spotify</a></li>
+                </ul>
             </form>
-        </article>
+        </section>
+
+        <section class="box resume">
+            <a name="myresume"></a>
+            <header>
+                <h2>Resume</h2>
+            </header>
+
+            <div class="content">
+                <p>I do not have a resume, yet!</p>
+            </div>
         </section>
     </main>
 

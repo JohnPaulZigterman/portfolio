@@ -6,6 +6,8 @@ nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 nav ul li a {
@@ -23,14 +25,12 @@ main {
     background-color: lightgray;
 }
 
-
-
 .navhead {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 2%;
-    background-color: darkslategrey;
+    background: linear-gradient(to top right, #2e3800 0%, #1a9a00 100%);
     color: tan;
 }
 
@@ -38,6 +38,24 @@ main {
     height: 60px;
     width: 100%;
     background-image: url("../images/banner.jpg");
+    background-size: cover;
+}
+
+.contactlist {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.profile {
+    border: black solid 8px;
+    min-width: 30vw;
+    min-height: 10vw;
+    background-image: url("../images/jpz.jpg");
+    background-size: cover;
+    margin-top: -1vw;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .box-container {
@@ -123,20 +141,31 @@ main {
 
 
 @media screen and (max-width: 768px) {
+
+    .navhead {
+        align-items: center;
+    }
+
+    nav ul {
+        display: block;
+        margin-left: 25px;
+    }
+
     .box {
-        display: inline-block;
         justify-content: center;
     }
 
     .box header {
         border-bottom: 6px green solid;
         border-right: none;
-        width: 150px;
-        font-size:25px;
+        width: 180px;
+        font-size: 15px;
+        text-align: center;
     }
     
     .content {
-        float: inline-end;
+        align-items: center;
+        justify-content: center;
         margin-top: 15px;
         margin-left: 0px;
         width: 100%;
